@@ -1,20 +1,14 @@
+import { IFilters } from "./types/type";
+
 namespace Proxys {
   console.log("script run start");
-
-  interface IFilter {
-    target: string | string[];
-    mode: string;
-    status: number[];
-  }
-
-  type IFilters = IFilter[];
 
   // 특정 url 주소와 status 코드에 대해서만 응답값을 변조하도록 설정
   const filter: IFilters = [
     {
-      target: ["apis.naver.com", "articles"],
+      target: ["apis.naver.com", "articles", "v2"],
       mode: "include",
-      status: [0],
+      status: [200],
     },
   ];
 
@@ -70,16 +64,16 @@ namespace Proxys {
       _this = this;
 
     _this.onreadystatechange = function () {
-      try {
-        console.log("Caught! :)", method, url /*, _this.responseText*/);
-        console.log("ready_status", _this.readyState, "status", _this.status);
-      } catch (e) {}
-
       // 요청이 완료된 경우에만 변조하도록 함 (readyState: 4)
       if (
         _this.readyState === 4 &&
         apply_filter_test(url, _this.status, filter)
       ) {
+        try {
+          console.log("Caught! :)", method, url /*, _this.responseText*/);
+          console.log("ready_status", _this.readyState, "status", _this.status);
+        } catch (e) {}
+
         try {
           //////////////////////////////////////
           // 이곳에 응답값 변조 로직을 작성합니다.
@@ -88,13 +82,13 @@ namespace Proxys {
           console.log(_this);
 
           // 여기서 responseText (응답 데이터) 와 status (응답 코드) 를 변조합니다.
-          Object.defineProperty(_this, "responseText", {
-            value: "password-correct",
-          });
+          // Object.defineProperty(_this, "responseText", {
+          //   value: "password-correct",
+          // });
 
-          Object.defineProperty(_this, "status", {
-            value: 200,
-          });
+          // Object.defineProperty(_this, "status", {
+          //   value: 200,
+          // });
 
           /////////////// 종료 //////////////////
         } catch (e) {}
@@ -115,32 +109,5 @@ namespace Proxys {
     });
 
     return _open.apply(_this, arguments as any);
-  };
-
-  const { fetch: origFetch } = window;
-  window.fetch = async (...args) => {
-    console.log("fetch called with args:", args);
-    const response = await origFetch(...args);
-
-    /* work with the cloned response in a separate promise
-     chain -- could use the same chain with `await`. */
-    response
-      .clone()
-      .json()
-      .then((data) => console.log("intercepted response data:", data))
-      .catch((err) => console.error(err));
-
-    /* the original response can be resolved unmodified: */
-    //return response;
-
-    /* or mock the response: */
-    return new Response(
-      JSON.stringify({
-        userId: 1,
-        id: 1,
-        title: "Mocked!!",
-        completed: false,
-      })
-    );
   };
 }
