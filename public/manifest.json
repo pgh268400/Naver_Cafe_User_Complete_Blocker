@@ -1,0 +1,19 @@
+{
+  "name": "Cafe User Blocker",
+  "version": "1.0",
+  "description": "네이버 카페의 차단 기능을 좀 더 확실하게 해줍니다.",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://cafe.naver.com/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  // 여기에 proxy.js를 리소스로 등록해야 inject.js에서 인젝션 할 수 있음.
+  "web_accessible_resources": [
+    {
+      "resources": ["proxy.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
