@@ -13,8 +13,8 @@
   "background": {
     "service_worker": "background.js"
   },
-  // chrome.scripting 을 사용하려면 아래 2개 등록 필수
-  "permissions": ["storage", "scripting"],
+  // chrome.scripting 을 사용하려면 아래 2개 등록 필수 (storage, scripting)
+  "permissions": ["storage", "scripting", "activeTab"],
   "action": {},
   "content_security_policy": {},
 

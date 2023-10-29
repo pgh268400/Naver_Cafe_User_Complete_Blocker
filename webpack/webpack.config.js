@@ -14,7 +14,6 @@ module.exports = {
         .replace("..\\src\\", "")
         .replace("../src/", "")
         .replace(".ts", "");
-      console.log(dir);
 
       // 번들링에서 제외할 파일
       const filter = [
@@ -23,7 +22,11 @@ module.exports = {
         "types\\type",
       ];
 
-      if (!filter.includes(dir)) obj[dir] = element;
+      if (!filter.includes(dir)) {
+        obj[dir] = element;
+        // console.log("target :", dir);
+      }
+
       return obj;
     }, {}),
   output: {

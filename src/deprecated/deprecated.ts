@@ -1,5 +1,6 @@
 // Redefine 오류를 피하기 위해 반드시 스크립트들은 namespace로 감싸야 한다.
 // content script들은 변수를 서로 공유하지 않는 듯 함.
+// 해당 코드는 deprecated 되었으며, 현재 사용하지 않는다.
 
 namespace App {
   console.log("카페 유저 차단 확장 프로그램이 실행되었습니다.");
