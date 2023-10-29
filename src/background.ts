@@ -1,4 +1,5 @@
 namespace Background {
+  // 컨텐츠 스크립트 등록을 위해 작동하는 백그라운드 스크립트 (service-worker)
   chrome.scripting.getRegisteredContentScripts(
     { ids: ["testing-scripts-gen"] },
     async (scripts) => {

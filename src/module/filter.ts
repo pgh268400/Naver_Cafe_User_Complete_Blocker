@@ -42,4 +42,10 @@ function apply_filter_test(url: string, xml_status: number, filter: IFilters) {
   return false; // 변조 필터링이 적용되지 않아야 함
 }
 
-export { apply_filter_test };
+// 문자열 배열에 특정 문자열이 포함되어 있는지 확인하는 함수
+// 문자열 배열에 특정 문자열이 하나라도 포함되어 있으면 true를 반환합니다.
+function include_string_in_array(arr: string[], target: string): boolean {
+  return arr.some((item) => item.includes(target));
+}
+
+export { apply_filter_test, include_string_in_array };
