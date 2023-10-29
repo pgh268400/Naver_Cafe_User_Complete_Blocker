@@ -1,3 +1,3 @@
-# Chrome_Extension_TypeScript_Only
-Boilerplate for developing Chrome extension with TypeScript  
-Just run the ```npm i``` command and use it.
+# Naver_Cafe_User_Complete_Blocker
+네이버 카페에서 꼴보기 싫은 사람을 더 완벽하게 차단해줍니다.  
+네이버 카페에서 유저 차단시 "차단된 멤버입니다" 라고 표시되지 않고 화면상에서 완전히 사라집니다
