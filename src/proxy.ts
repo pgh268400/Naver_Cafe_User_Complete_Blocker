@@ -41,13 +41,19 @@ namespace Proxys {
         } catch (e) {}
 
         try {
-          // 먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.
           if (url.toString().includes("v2.1")) {
+            // 먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.
+
             console.log("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
             const res = JSON.parse(_this.responseText);
             blocked_user_key = res.result.user.blockMemberKeyList;
             console.log("blocked_user_key", blocked_user_key);
             return;
+          } else if (url.toString().includes("ArticleList.nhn")) {
+            // 만약에 본문 페이지를 로딩한 경우엔 글 목록을 탐색하고 차단된 유저의 글이 있다면 필터링 합니다.
+            console.log(
+              "본문 페이지를 로딩한 경우엔 글 목록을 탐색하고 차단된 유저의 글이 있다면 필터링 합니다."
+            );
           }
 
           //////////////////////////////////////
@@ -150,4 +156,77 @@ namespace Proxys {
 
     return _open.apply(_this, arguments as any);
   };
+}
+
+// 현재 주소 가져오기
+const current_url = window.location.href;
+console.log("current_url", current_url);
+
+// 특정 주소를 확인하고 처리
+if (current_url.includes("ArticleList")) {
+  // 글 목록 페이지에서 실행됐으면 여기서 차단한 유저의 글이 있는지 확인하고 필터링한다.
+  console.log("본문에 진입하였습니다.");
+
+  // 현재 쿠키값 출력
+  // console.log("현재 쿠키값", document.cookie);
+
+  // const cookie = document.cookie; //현재 쿠키값
+  const club_id = (window as any).g_sClubId; //현재 카페 id
+
+  // fetch 요청을 보내서 현재 접속중인 유저의
+  // 차단된 유저의 키를 가져옵니다.
+
+  fetch(
+    `https://apis.naver.com/cafe-web/cafe-cafeinfo-api/v1.1/cafes/${club_id}/block-members`,
+    {
+      method: "GET",
+      // 아래 헤더를 추가하면 쿠키값이 자동으로 포함되어 요청되는듯?
+      credentials: "include",
+    }
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      // 차단된 유저의 키를 저장한다.
+      const blocked_user_key = data.result;
+
+      console.log(
+        "차단된 유저의 키를 가져왔습니다, 이 키를 기준으로 본문 글을 삭제합니다",
+        blocked_user_key
+      );
+
+      // 이제 DOM을 조작하면 끝남.
+      // 글 목록을 가져온다.
+      const tr_user_articles = document.querySelectorAll("#main-area table tr");
+
+      // for of문으로 순회한다
+      for (const tr_user_data of tr_user_articles) {
+        // console.log("tr_user_data", tr_user_data);
+        const user_nick = tr_user_data.querySelector(".p-nick a");
+        if (user_nick === null) continue;
+
+        // user_nick의 onclick 텍스트를 가져온다
+        const onclick_text = user_nick.getAttribute("onclick");
+        if (onclick_text === null) throw new Error("onclick_text is null");
+
+        const split_onclick = onclick_text.split(",");
+        // member_key의 원래 형태 ex => " 'mJWb3v1017TgkFAhDVI28w'"
+        const member_key = split_onclick[1].trim().replace(/^'+|'+$/g, ""); //양쪽 공백 제거, 양쪽 따옴표 제거
+        // console.log("split_onclick", split_onclick);
+        // console.log("member_key", member_key);
+
+        if (include_string_in_array(blocked_user_key, member_key)) {
+          // 차단된 유저의 글이면 삭제한다.
+          console.log(
+            "Detect blocked user's article, remove it",
+            user_nick,
+            member_key
+          );
+          tr_user_data.remove();
+        }
+      }
+    })
+    .catch((error) => {
+      console.error("오류 발생:", error);
+    });
 }
