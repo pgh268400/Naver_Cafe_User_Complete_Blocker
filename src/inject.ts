@@ -6,9 +6,11 @@
   해당 코드는 background.ts 에 의해 실행되는 코드이다.
 */
 
-var s: any = document.createElement("script");
-s.src = chrome.runtime.getURL("proxy.js");
-s.onload = function () {
-  this.remove();
-};
-(document.head || document.documentElement).appendChild(s);
+namespace Inject {
+  var s: any = document.createElement("script");
+  s.src = chrome.runtime.getURL("proxy.js");
+  s.onload = function () {
+    this.remove();
+  };
+  (document.head || document.documentElement).appendChild(s);
+}

@@ -14,7 +14,16 @@ module.exports = {
         .replace("..\\src\\", "")
         .replace("../src/", "")
         .replace(".ts", "");
-      obj[dir] = element;
+      console.log(dir);
+
+      // 번들링에서 제외할 파일
+      const filter = [
+        "deprecated\\deprecated",
+        "module\\filter",
+        "types\\type",
+      ];
+
+      if (!filter.includes(dir)) obj[dir] = element;
       return obj;
     }, {}),
   output: {

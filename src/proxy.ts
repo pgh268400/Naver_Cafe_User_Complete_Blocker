@@ -2,6 +2,7 @@ import { apply_filter_test, include_string_in_array } from "./module/filter";
 import { IComments, IFilters } from "./types/type";
 
 // 해당 코드는 inject.ts 에 의해 실행되는 코드이다.
+// response를 변조하기 위해 사용되는 가장 핵심적인 코드이다.
 namespace Proxys {
   console.log("script run start");
 
@@ -46,6 +47,7 @@ namespace Proxys {
             const res = JSON.parse(_this.responseText);
             blocked_user_key = res.result.user.blockMemberKeyList;
             console.log("blocked_user_key", blocked_user_key);
+            return;
           }
 
           //////////////////////////////////////
@@ -82,6 +84,9 @@ namespace Proxys {
                 그 답글이 차단된 유저의 댓글에 달린 답글인지 확인합니다.
                 만약에 차단된 유저의 댓글에 달린 답글이라면 필터링 합니다.
                 참고 : 실제 삭제는 하지 않고 무시함
+
+                comment.isRef : true면 답글, false면 댓글
+                comment.replyMember : 답글의 경우에만 존재하는 속성
                 */
                 if (
                   comment.isRef &&
@@ -102,7 +107,7 @@ namespace Proxys {
 
           console.log("작업 완료된 comments", updated_comments);
 
-          // 댓글 갯수 DOM에 반영
+          // 삭제한 댓글 갯수 DOM에 반영
           const comment_dom = document.querySelector<HTMLElement>(
             "#app .article_container .ReplyBox .num"
           );
