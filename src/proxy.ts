@@ -82,7 +82,7 @@ namespace Proxys {
                 그 답글이 차단된 유저의 댓글에 달린 답글인지 확인합니다.
                 만약에 차단된 유저의 댓글에 달린 답글이라면 필터링 합니다.
                 참고 : 실제 삭제는 하지 않고 무시함
-              */
+                */
                 if (
                   comment.isRef &&
                   comment.replyMember !== undefined &&
@@ -93,7 +93,7 @@ namespace Proxys {
                 ) {
                   // PASS
                 } else {
-                  // 일반 유저의 댓글이면서, 차단된 유저의 댓글에 달린 답글이 아닌 경우
+                  // 일반 유저의 댓글이면서, 차단된 유저의 댓글에 달린 답글이 아닌 경우 유일하게 남길 댓글임
                   updated_comments.push(comment);
                 }
               }
