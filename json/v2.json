@@ -1,0 +1,796 @@
+{
+  "result": {
+    "cafeId": 28173877,
+    "articleId": 1027390,
+    "menuId": 23,
+    "cafe": {
+      "id": 28173877,
+      "name": "AMD 비쉐라 라이젠 사",
+      "pcCafeName": "AMD 비쉐라 라이젠 컴퓨터 사용자 모임",
+      "url": "fx8300",
+      "image": {
+        "url": "https://cafeptthumb-phinf.pstatic.net/MjAxNzAzMTRfMTI2/MDAxNDg5NDY2NzIzMTcz.muvh4ec3n-W92hOK0f3oLjJd_lI_Pj4GEljNvx3UaDMg.jhyRMcDZWRQWDPSb00YhQXBG7u5FuHY3PXFO6muH80sg.JPEG.feelmefirst2/image.jpg",
+        "service": "CAFE",
+        "type": "f100_100"
+      },
+      "introduction": "초보도 놀 수 있는 매너있는 컴퓨터 카페, 비매너 OUT",
+      "memberCount": 167325,
+      "hasPopularArticle": true,
+      "usingMemberLevel": true,
+      "memberLevelIconId": 1,
+      "openType": "O",
+      "isDormant": false
+    },
+    "user": {
+      "id": "pgh268400",
+      "memberKey": "RH-Q2-L84HgZnB6gpa_Q9g",
+      "nick": "Louise",
+      "image": {
+        "url": "https://cafeptthumb-phinf.pstatic.net/MjAyMTAzMjNfMjQy/MDAxNjE2NDI5MTI2NDA4.JhPXmH5T1GFq17xrNKa-chuHoC6ldFcek2JYXoiaWKUg.iErVoK8A1ybnmSqzRAmD-MZCZs1NoakWi0h-Jc6ZzlIg.JPEG/unnamed.jpg",
+        "service": "CAFE",
+        "type": "c77_77",
+        "isAnimated": false
+      },
+      "memberLevel": 150,
+      "memberLevelName": "정회원",
+      "memberLevelIconUrl": "https://cafe.pstatic.net/levelicon/1/1_150.gif",
+      "currentPopularMember": false,
+      "appliedAlready": false,
+      "permission": {
+        "isBoardStaff": false,
+        "isOnlyOptionalBoardStaff": false,
+        "isActivityStopExecutable": false,
+        "isNoticeRegistrable": false,
+        "isViceManager": false,
+        "isCafeManager": false,
+        "isEntireBoardStaff": false,
+        "isMemberStaff": false
+      },
+      "isCafeMember": true,
+      "isLogin": true,
+      "isOwner": false,
+      "isGroupId": false,
+      "isBelowAge14": false
+    },
+    "likeItUsers": [],
+    "article": {
+      "id": 1027390,
+      "refArticleId": 1027390,
+      "menu": {
+        "id": 23,
+        "name": "질문 QnA _ 아무거나  다 ",
+        "menuType": "B",
+        "boardType": "L",
+        "badMenu": false,
+        "badMenuByRestrict": false
+      },
+      "subject": "중고 부품들",
+      "headId": 139,
+      "head": "아무거나",
+      "writer": {
+        "id": "saya016",
+        "nick": "RTxx",
+        "image": {
+          "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+          "service": "CAFE",
+          "type": "c77_77"
+        },
+        "memberLevel": 150,
+        "memberLevelName": "정회원",
+        "memberLevelIconUrl": "https://cafe.pstatic.net/levelicon/1/1_150.gif",
+        "currentPopularMember": false
+      },
+      "writeDate": 1698385849663,
+      "readCount": 246,
+      "commentCount": 20,
+      "existScrapAddContent": false,
+      "gdid": "90000004_01ADE635000FAD3E00000000",
+      "replyListOrder": "",
+      "isNotice": false,
+      "isNewComment": false,
+      "isDeleteParent": false,
+      "isMarket": false,
+      "isGroupPurchase": false,
+      "isPersonalTrade": false,
+      "isReadable": false,
+      "isBlind": false,
+      "isOpen": false,
+      "isEnableScrap": true,
+      "scrapCount": 0,
+      "isEnableExternal": true,
+      "isEnableSocialPlugin": true,
+      "isWriteComment": true,
+      "isAutoSourcing": false
+    },
+    "comments": {
+      "items": [
+        {
+          "id": 81113041,
+          "refId": 81113041,
+          "writer": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "다해서 5만이면 가져와야죠 ㅎㅎㅎ 안되는거 있으면 안가져오고 ㅎㅎ;;",
+          "updateDate": 1698386233000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": false,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113041&ctitle=%EB%8B%A4%ED%95%B4%EC%84%9C+5%EB%A7%8C%EC%9D%B4%EB%A9%B4+%EA%B0%80%EC%A0%B8%EC%99%80%EC%95%BC%EC%A3%A0+%E3%85%8E%E3%85%8E%E3%85%8E+%EC%95%88%EB%90%98%EB%8A%94%EA%B1%B0+%EC%9E%88%EC%9C%BC%EB%A9%B4+%EC%95%88%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0+%E3%85%8E%E3%85%8E%3B%3B&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113041&ctitle=%EB%8B%A4%ED%95%B4%EC%84%9C+5%EB%A7%8C%EC%9D%B4%EB%A9%B4+%EA%B0%80%EC%A0%B8%EC%99%80%EC%95%BC%EC%A3%A0+%E3%85%8E%E3%85%8E%E3%85%8E+%EC%95%88%EB%90%98%EB%8A%94%EA%B1%B0+%EC%9E%88%EC%9C%BC%EB%A9%B4+%EC%95%88%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B3%A0+%E3%85%8E%E3%85%8E%3B%3B&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113055,
+          "refId": 81113041,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "다가져가는조건이래요. 차가없어서흠..",
+          "updateDate": 1698386276000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113055&ctitle=%EB%8B%A4%EA%B0%80%EC%A0%B8%EA%B0%80%EB%8A%94%EC%A1%B0%EA%B1%B4%EC%9D%B4%EB%9E%98%EC%9A%94.+%EC%B0%A8%EA%B0%80%EC%97%86%EC%96%B4%EC%84%9C%ED%9D%A0..&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113055&ctitle=%EB%8B%A4%EA%B0%80%EC%A0%B8%EA%B0%80%EB%8A%94%EC%A1%B0%EA%B1%B4%EC%9D%B4%EB%9E%98%EC%9A%94.+%EC%B0%A8%EA%B0%80%EC%97%86%EC%96%B4%EC%84%9C%ED%9D%A0..&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113062,
+          "refId": 81113041,
+          "writer": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "그러니까 전부다 가져가는 조건인데 안되는게 있으면 보드 시퓨 파워 등 확인이 안되면 안가져 갈거같아요..",
+          "updateDate": 1698386310000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113062&ctitle=%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C+%EC%A0%84%EB%B6%80%EB%8B%A4+%EA%B0%80%EC%A0%B8%EA%B0%80%EB%8A%94+%EC%A1%B0%EA%B1%B4%EC%9D%B8%EB%8D%B0+%EC%95%88%EB%90%98%EB%8A%94%EA%B2%8C+%EC%9E%88%EC%9C%BC%EB%A9%B4+%EB%B3%B4%EB%93%9C+%EC%8B%9C%ED%93%A8+%ED%8C%8C%EC%9B%8C+%EB%93%B1+%ED%99%95%EC%9D%B8%EC%9D%B4+%EC%95%88%EB%90%98%EB%A9%B4+%EC%95%88%EA%B0%80%EC%A0%B8+%EA%B0%88%EA%B1%B0%EA%B0%99%EC%95%84%EC%9A%94...&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113062&ctitle=%EA%B7%B8%EB%9F%AC%EB%8B%88%EA%B9%8C+%EC%A0%84%EB%B6%80%EB%8B%A4+%EA%B0%80%EC%A0%B8%EA%B0%80%EB%8A%94+%EC%A1%B0%EA%B1%B4%EC%9D%B8%EB%8D%B0+%EC%95%88%EB%90%98%EB%8A%94%EA%B2%8C+%EC%9E%88%EC%9C%BC%EB%A9%B4+%EB%B3%B4%EB%93%9C+%EC%8B%9C%ED%93%A8+%ED%8C%8C%EC%9B%8C+%EB%93%B1+%ED%99%95%EC%9D%B8%EC%9D%B4+%EC%95%88%EB%90%98%EB%A9%B4+%EC%95%88%EA%B0%80%EC%A0%B8+%EA%B0%88%EA%B1%B0%EA%B0%99%EC%95%84%EC%9A%94...&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113068,
+          "refId": 81113041,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "currentPopularMember": false
+          },
+          "content": "선착순이라네요 ㄷㄷ어카지",
+          "updateDate": 1698386330000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113068&ctitle=%EC%84%A0%EC%B0%A9%EC%88%9C%EC%9D%B4%EB%9D%BC%EB%84%A4%EC%9A%94+%E3%84%B7%E3%84%B7%EC%96%B4%EC%B9%B4%EC%A7%80&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113068&ctitle=%EC%84%A0%EC%B0%A9%EC%88%9C%EC%9D%B4%EB%9D%BC%EB%84%A4%EC%9A%94+%E3%84%B7%E3%84%B7%EC%96%B4%EC%B9%B4%EC%A7%80&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113127,
+          "refId": 81113041,
+          "writer": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "저는 가져올거같네요 그냥 다시 되팔램한다치고 케이스만 만원씩 잡아서 4만원 61보드 하나 살았다치고 만원 이면 본전이라 ㅋㅋ",
+          "updateDate": 1698386547000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113127&ctitle=%EC%A0%80%EB%8A%94+%EA%B0%80%EC%A0%B8%EC%98%AC%EA%B1%B0%EA%B0%99%EB%84%A4%EC%9A%94+%EA%B7%B8%EB%83%A5+%EB%8B%A4%EC%8B%9C+%EB%90%98%ED%8C%94%EB%9E%A8%ED%95%9C%EB%8B%A4%EC%B9%98%EA%B3%A0+%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A7%8C+%EB%A7%8C%EC%9B%90%EC%94%A9+%EC%9E%A1%EC%95%84%EC%84%9C+4%EB%A7%8C%EC%9B%90+61%EB%B3%B4%EB%93%9C+%ED%95%98%EB%82%98+%EC%82%B4%EC%95%98%EB%8B%A4%EC%B9%98%EA%B3%A0+%EB%A7%8C..&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113127&ctitle=%EC%A0%80%EB%8A%94+%EA%B0%80%EC%A0%B8%EC%98%AC%EA%B1%B0%EA%B0%99%EB%84%A4%EC%9A%94+%EA%B7%B8%EB%83%A5+%EB%8B%A4%EC%8B%9C+%EB%90%98%ED%8C%94%EB%9E%A8%ED%95%9C%EB%8B%A4%EC%B9%98%EA%B3%A0+%EC%BC%80%EC%9D%B4%EC%8A%A4%EB%A7%8C+%EB%A7%8C%EC%9B%90%EC%94%A9+%EC%9E%A1%EC%95%84%EC%84%9C+4%EB%A7%8C%EC%9B%90+61%EB%B3%B4%EB%93%9C+%ED%95%98%EB%82%98+%EC%82%B4%EC%95%98%EB%8B%A4%EC%B9%98%EA%B3%A0+%EB%A7%8C..&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113144,
+          "refId": 81113041,
+          "writer": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "차가 없으면 힘드실 것 같은데..",
+          "updateDate": 1698386681000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113144&ctitle=%EC%B0%A8%EA%B0%80+%EC%97%86%EC%9C%BC%EB%A9%B4+%ED%9E%98%EB%93%9C%EC%8B%A4+%EA%B2%83+%EA%B0%99%EC%9D%80%EB%8D%B0..&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113144&ctitle=%EC%B0%A8%EA%B0%80+%EC%97%86%EC%9C%BC%EB%A9%B4+%ED%9E%98%EB%93%9C%EC%8B%A4+%EA%B2%83+%EA%B0%99%EC%9D%80%EB%8D%B0..&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113896,
+          "refId": 81113041,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "currentPopularMember": false
+          },
+          "content": "택시로 가져왓네요ㄷㄷ 한대 테스트중입니다 b75보드에 3570이네요",
+          "updateDate": 1698390425000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113896&ctitle=%ED%83%9D%EC%8B%9C%EB%A1%9C+%EA%B0%80%EC%A0%B8%EC%99%93%EB%84%A4%EC%9A%94%E3%84%B7%E3%84%B7+%ED%95%9C%EB%8C%80+%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%A4%91%EC%9E%85%EB%8B%88%EB%8B%A4+b75%EB%B3%B4%EB%93%9C%EC%97%90+3570%EC%9D%B4%EB%84%A4%EC%9A%94&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113896&ctitle=%ED%83%9D%EC%8B%9C%EB%A1%9C+%EA%B0%80%EC%A0%B8%EC%99%93%EB%84%A4%EC%9A%94%E3%84%B7%E3%84%B7+%ED%95%9C%EB%8C%80+%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%A4%91%EC%9E%85%EB%8B%88%EB%8B%A4+b75%EB%B3%B4%EB%93%9C%EC%97%90+3570%EC%9D%B4%EB%84%A4%EC%9A%94&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81114151,
+          "refId": 81113041,
+          "writer": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "이야 잘되길 바랍니다!! 고생한 보람이 있어야하는데!!!!",
+          "updateDate": 1698391753000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114151&ctitle=%EC%9D%B4%EC%95%BC+%EC%9E%98%EB%90%98%EA%B8%B8+%EB%B0%94%EB%9E%8D%EB%8B%88%EB%8B%A4%21%21+%EA%B3%A0%EC%83%9D%ED%95%9C+%EB%B3%B4%EB%9E%8C%EC%9D%B4+%EC%9E%88%EC%96%B4%EC%95%BC%ED%95%98%EB%8A%94%EB%8D%B0%21%21%21%21&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114151&ctitle=%EC%9D%B4%EC%95%BC+%EC%9E%98%EB%90%98%EA%B8%B8+%EB%B0%94%EB%9E%8D%EB%8B%88%EB%8B%A4%21%21+%EA%B3%A0%EC%83%9D%ED%95%9C+%EB%B3%B4%EB%9E%8C%EC%9D%B4+%EC%9E%88%EC%96%B4%EC%95%BC%ED%95%98%EB%8A%94%EB%8D%B0%21%21%21%21&cnickname=%EC%9A%B0%EB%81%BC%EA%BA%84%EB%A5%B4%EB%A5%B5&cwriter=col1992&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81114162,
+          "refId": 81113041,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "col1992",
+            "memberKey": "kWN1buLEf5yqthY6I5vP5w",
+            "nick": "우끼꺄르륵",
+            "currentPopularMember": false
+          },
+          "content": "네 ㅠ 한대는 켜지기는하네요 잘되길 빕니다",
+          "updateDate": 1698391800000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114162&ctitle=%EB%84%A4+%E3%85%A0+%ED%95%9C%EB%8C%80%EB%8A%94+%EC%BC%9C%EC%A7%80%EA%B8%B0%EB%8A%94%ED%95%98%EB%84%A4%EC%9A%94+%EC%9E%98%EB%90%98%EA%B8%B8+%EB%B9%95%EB%8B%88%EB%8B%A4&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114162&ctitle=%EB%84%A4+%E3%85%A0+%ED%95%9C%EB%8C%80%EB%8A%94+%EC%BC%9C%EC%A7%80%EA%B8%B0%EB%8A%94%ED%95%98%EB%84%A4%EC%9A%94+%EC%9E%98%EB%90%98%EA%B8%B8+%EB%B9%95%EB%8B%88%EB%8B%A4&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113441,
+          "refId": 81113441,
+          "writer": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "음 차가 없다면 절대 비추입니다\r\n본체 두 대도 힘들거같아요",
+          "updateDate": 1698388158000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": false,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113441&ctitle=%EC%9D%8C+%EC%B0%A8%EA%B0%80+%EC%97%86%EB%8B%A4%EB%A9%B4+%EC%A0%88%EB%8C%80+%EB%B9%84%EC%B6%94%EC%9E%85%EB%8B%88%EB%8B%A4%0D%3Cbr+%2F%3E%EB%B3%B8%EC%B2%B4+%EB%91%90+%EB%8C%80%EB%8F%84+%ED%9E%98%EB%93%A4%EA%B1%B0%EA%B0%99%EC%95%84%EC%9A%94&cnickname=rlawodnjss&cwriter=hssuk1970&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113441&ctitle=%EC%9D%8C+%EC%B0%A8%EA%B0%80+%EC%97%86%EB%8B%A4%EB%A9%B4+%EC%A0%88%EB%8C%80+%EB%B9%84%EC%B6%94%EC%9E%85%EB%8B%88%EB%8B%A4%0D%3Cbr+%2F%3E%EB%B3%B8%EC%B2%B4+%EB%91%90+%EB%8C%80%EB%8F%84+%ED%9E%98%EB%93%A4%EA%B1%B0%EA%B0%99%EC%95%84%EC%9A%94&cnickname=rlawodnjss&cwriter=hssuk1970&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113916,
+          "refId": 81113441,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "가져오긴햇네요..",
+          "updateDate": 1698390535000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113916&ctitle=%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B4%ED%96%87%EB%84%A4%EC%9A%94..&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113916&ctitle=%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B4%ED%96%87%EB%84%A4%EC%9A%94..&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113947,
+          "refId": 81113441,
+          "writer": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "오... 수고 많이하셨네요 ㄷㄷ \r\n저도 가끔 본체 들고 나르는데 진짜 생각보다 많이 무거워서 힘들더라구요..",
+          "updateDate": 1698390749000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113947&ctitle=%EC%98%A4...+%EC%88%98%EA%B3%A0+%EB%A7%8E%EC%9D%B4%ED%95%98%EC%85%A8%EB%84%A4%EC%9A%94+%E3%84%B7%E3%84%B7+%0D%3Cbr+%2F%3E%EC%A0%80%EB%8F%84+%EA%B0%80%EB%81%94+%EB%B3%B8%EC%B2%B4+%EB%93%A4%EA%B3%A0+%EB%82%98%EB%A5%B4%EB%8A%94%EB%8D%B0+%EC%A7%84%EC%A7%9C+%EC%83%9D%EA%B0%81%EB%B3%B4%EB%8B%A4+%EB%A7%8E%EC%9D%B4+%EB%AC%B4%EA%B1%B0%EC%9B%8C%EC%84%9C+%ED%9E%98%EB%93%A4%EB%8D%94..&cnickname=rlawodnjss&cwriter=hssuk1970&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113947&ctitle=%EC%98%A4...+%EC%88%98%EA%B3%A0+%EB%A7%8E%EC%9D%B4%ED%95%98%EC%85%A8%EB%84%A4%EC%9A%94+%E3%84%B7%E3%84%B7+%0D%3Cbr+%2F%3E%EC%A0%80%EB%8F%84+%EA%B0%80%EB%81%94+%EB%B3%B8%EC%B2%B4+%EB%93%A4%EA%B3%A0+%EB%82%98%EB%A5%B4%EB%8A%94%EB%8D%B0+%EC%A7%84%EC%A7%9C+%EC%83%9D%EA%B0%81%EB%B3%B4%EB%8B%A4+%EB%A7%8E%EC%9D%B4+%EB%AC%B4%EA%B1%B0%EC%9B%8C%EC%84%9C+%ED%9E%98%EB%93%A4%EB%8D%94..&cnickname=rlawodnjss&cwriter=hssuk1970&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113955,
+          "refId": 81113441,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "currentPopularMember": false
+          },
+          "content": "",
+          "sticker": {
+            "id": "cafe_001-14-185-160",
+            "url": "https://storep-phinf.pstatic.net/cafe_001/original_14.gif",
+            "type": "pa100_100",
+            "animation": true,
+            "width": 129,
+            "height": 112
+          },
+          "updateDate": 1698390786000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113955&ctitle=%28%EC%8A%A4%ED%8B%B0%EC%BB%A4%29&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113955&ctitle=%28%EC%8A%A4%ED%8B%B0%EC%BB%A4%29&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81113960,
+          "refId": 81113441,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "currentPopularMember": false
+          },
+          "content": "4층이라 무겁지는않아도 계단땜에 힘드네요",
+          "updateDate": 1698390813000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113960&ctitle=4%EC%B8%B5%EC%9D%B4%EB%9D%BC+%EB%AC%B4%EA%B2%81%EC%A7%80%EB%8A%94%EC%95%8A%EC%95%84%EB%8F%84+%EA%B3%84%EB%8B%A8%EB%95%9C%EC%97%90+%ED%9E%98%EB%93%9C%EB%84%A4%EC%9A%94&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81113960&ctitle=4%EC%B8%B5%EC%9D%B4%EB%9D%BC+%EB%AC%B4%EA%B2%81%EC%A7%80%EB%8A%94%EC%95%8A%EC%95%84%EB%8F%84+%EA%B3%84%EB%8B%A8%EB%95%9C%EC%97%90+%ED%9E%98%EB%93%9C%EB%84%A4%EC%9A%94&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81114103,
+          "refId": 81113441,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "currentPopularMember": false
+          },
+          "content": "fx8300이면 팔병장인가요?",
+          "updateDate": 1698391545000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114103&ctitle=fx8300%EC%9D%B4%EB%A9%B4+%ED%8C%94%EB%B3%91%EC%9E%A5%EC%9D%B8%EA%B0%80%EC%9A%94%3F&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114103&ctitle=fx8300%EC%9D%B4%EB%A9%B4+%ED%8C%94%EB%B3%91%EC%9E%A5%EC%9D%B8%EA%B0%80%EC%9A%94%3F&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81114117,
+          "refId": 81113441,
+          "writer": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "currentPopularMember": false
+          },
+          "content": "넵 팔병장 맞아요",
+          "updateDate": 1698391592000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114117&ctitle=%EB%84%B5+%ED%8C%94%EB%B3%91%EC%9E%A5+%EB%A7%9E%EC%95%84%EC%9A%94&cnickname=rlawodnjss&cwriter=hssuk1970&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114117&ctitle=%EB%84%B5+%ED%8C%94%EB%B3%91%EC%9E%A5+%EB%A7%9E%EC%95%84%EC%9A%94&cnickname=rlawodnjss&cwriter=hssuk1970&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81114661,
+          "refId": 81113441,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "replyMember": {
+            "id": "hssuk1970",
+            "memberKey": "U1NR-uPDPyc3h2LQavhN3A",
+            "nick": "rlawodnjss",
+            "currentPopularMember": false
+          },
+          "content": "메인보드에 한쪽에 8기가 두개 껴있엇는데 와서보니 4기가랑 2기가 밖에 없는데 그냥써야겟죠 좀속은 느낌이들어서요ㅠ 8기가 한개는 두는줄알앗는데 자기가. 8기가 쓴다는거겟죠?",
+          "updateDate": 1698393802000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114661&ctitle=%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%EC%97%90+%ED%95%9C%EC%AA%BD%EC%97%90+8%EA%B8%B0%EA%B0%80+%EB%91%90%EA%B0%9C+%EA%BB%B4%EC%9E%88%EC%97%87%EB%8A%94%EB%8D%B0+%EC%99%80%EC%84%9C%EB%B3%B4%EB%8B%88+4%EA%B8%B0%EA%B0%80%EB%9E%91+2%EA%B8%B0%EA%B0%80+%EB%B0%96%EC%97%90+%EC%97%86%EB%8A%94%EB%8D%B0+%EA%B7%B8%EB%83%A5%EC%8D%A8%EC%95%BC%EA%B2%9F%EC%A3%A0+%EC%A2%80%EC%86%8D%EC%9D%80+%EB%8A%90%EB%82%8C..&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81114661&ctitle=%EB%A9%94%EC%9D%B8%EB%B3%B4%EB%93%9C%EC%97%90+%ED%95%9C%EC%AA%BD%EC%97%90+8%EA%B8%B0%EA%B0%80+%EB%91%90%EA%B0%9C+%EA%BB%B4%EC%9E%88%EC%97%87%EB%8A%94%EB%8D%B0+%EC%99%80%EC%84%9C%EB%B3%B4%EB%8B%88+4%EA%B8%B0%EA%B0%80%EB%9E%91+2%EA%B8%B0%EA%B0%80+%EB%B0%96%EC%97%90+%EC%97%86%EB%8A%94%EB%8D%B0+%EA%B7%B8%EB%83%A5%EC%8D%A8%EC%95%BC%EA%B2%9F%EC%A3%A0+%EC%A2%80%EC%86%8D%EC%9D%80+%EB%8A%90%EB%82%8C..&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81115046,
+          "refId": 81115046,
+          "writer": {
+            "id": "ggffdd15",
+            "memberKey": "9I8nrgF_WeEwN1HkG9174A",
+            "nick": "발라당",
+            "image": {
+              "url": "https://cafeptthumb-phinf.pstatic.net/MjAyMzA1MTZfMjU0/MDAxNjg0MjQ4MDI3NDgx.oGfRCAT9sazfuM5WGKNbpxf9OGWWzsXPXeypNGl2aFog.H7VKai7UYjlISRi5epYMm--b8-GGCcBdJGVPovDmvGIg.JPEG/externalFile.jpg",
+              "service": "CAFE",
+              "type": "c77_77",
+              "isAnimated": false
+            },
+            "currentPopularMember": false
+          },
+          "content": "와5만이면 무적권 입니다 ㅎ",
+          "updateDate": 1698395933000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": false,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81115046&ctitle=%EC%99%805%EB%A7%8C%EC%9D%B4%EB%A9%B4+%EB%AC%B4%EC%A0%81%EA%B6%8C+%EC%9E%85%EB%8B%88%EB%8B%A4+%E3%85%8E&cnickname=%EB%B0%9C%EB%9D%BC%EB%8B%B9&cwriter=ggffdd15&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81115046&ctitle=%EC%99%805%EB%A7%8C%EC%9D%B4%EB%A9%B4+%EB%AC%B4%EC%A0%81%EA%B6%8C+%EC%9E%85%EB%8B%88%EB%8B%A4+%E3%85%8E&cnickname=%EB%B0%9C%EB%9D%BC%EB%8B%B9&cwriter=ggffdd15&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81115050,
+          "refId": 81115046,
+          "writer": {
+            "id": "saya016",
+            "memberKey": "pClOLeaPawdL5nDyZfInQg",
+            "nick": "RTxx",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "택시비까지하면 6천원정도 더나왓네용",
+          "updateDate": 1698395984000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": true,
+          "isDeleted": false,
+          "isArticleWriter": true,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81115050&ctitle=%ED%83%9D%EC%8B%9C%EB%B9%84%EA%B9%8C%EC%A7%80%ED%95%98%EB%A9%B4+6%EC%B2%9C%EC%9B%90%EC%A0%95%EB%8F%84+%EB%8D%94%EB%82%98%EC%99%93%EB%84%A4%EC%9A%A9&cnickname=RTxx&cwriter=saya016&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81115050&ctitle=%ED%83%9D%EC%8B%9C%EB%B9%84%EA%B9%8C%EC%A7%80%ED%95%98%EB%A9%B4+6%EC%B2%9C%EC%9B%90%EC%A0%95%EB%8F%84+%EB%8D%94%EB%82%98%EC%99%93%EB%84%A4%EC%9A%A9&cnickname=RTxx&cwriter=saya016&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        },
+        {
+          "id": 81123282,
+          "refId": 81123282,
+          "writer": {
+            "id": "sim0527",
+            "memberKey": "Rvs7BtAvnUx4OFJZdsq6Fg",
+            "nick": "예디고",
+            "image": {
+              "url": "https://ssl.pstatic.net/static/cafe/cafe_pc/default/cafe_profile_77.png",
+              "service": "CAFE",
+              "type": "c77_77"
+            },
+            "currentPopularMember": false
+          },
+          "content": "그래픽 카드가 제꼬보다 좋네요 ㅋㅋ",
+          "updateDate": 1698431657000,
+          "memberLevel": 150,
+          "memberLevelIconId": 1,
+          "isRef": false,
+          "isDeleted": false,
+          "isArticleWriter": false,
+          "isNew": false,
+          "isRemovable": false,
+          "standardReportPopup": {
+            "normalUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81123282&ctitle=%EA%B7%B8%EB%9E%98%ED%94%BD+%EC%B9%B4%EB%93%9C%EA%B0%80+%EC%A0%9C%EA%BC%AC%EB%B3%B4%EB%8B%A4+%EC%A2%8B%EB%84%A4%EC%9A%94+%E3%85%8B%E3%85%8B&cnickname=%EC%98%88%EB%94%94%EA%B3%A0&cwriter=sim0527&dark=disable&env=pc",
+            "darkUrl": "https://srp2.naver.com/report?exit=close&svc=CAF&vsvc=CAF&rcountry=KR&rlang=ko&memtype=Y&ctype=AA12&cid=28173877;1027390;81123282&ctitle=%EA%B7%B8%EB%9E%98%ED%94%BD+%EC%B9%B4%EB%93%9C%EA%B0%80+%EC%A0%9C%EA%BC%AC%EB%B3%B4%EB%8B%A4+%EC%A2%8B%EB%84%A4%EC%9A%94+%E3%85%8B%E3%85%8B&cnickname=%EC%98%88%EB%94%94%EA%B3%A0&cwriter=sim0527&dark=enable&env=pc",
+            "showRemoveAlert": false
+          }
+        }
+      ],
+      "alarm": { "isShow": true, "isChecked": false },
+      "disableWriteReason": ""
+    },
+    "displayCommentCount": 20,
+    "hasPrev": false,
+    "hasNext": false,
+    "authority": {
+      "isRightClick": true,
+      "isDoLike": false,
+      "isWriteComment": true
+    },
+    "readOnlyModeInfo": {
+      "readOnlyModeStatus": false,
+      "timeToPreNotice": false,
+      "timeToNotice": false,
+      "emergency": false,
+      "readOnlyNoticeDuration": "",
+      "linkToNoticeURL": "https://notice.naver.com/notices/cafe/13976?page=1"
+    },
+    "isReadOnlyMode": false
+  }
+}

@@ -1,3 +1,4 @@
+import { apply_filter_test } from "./module/filter";
 import { IFilters } from "./types/type";
 
 namespace Proxys {
@@ -5,58 +6,21 @@ namespace Proxys {
 
   // 특정 url 주소와 status 코드에 대해서만 응답값을 변조하도록 설정
   const filter: IFilters = [
+    // 기본적으로 v2.1 api가 먼저 요청되고, 그 다음에 v2 api 가 요청됨
     {
-      target: ["apis.naver.com", "articles", "v2"],
+      target: ["apis.naver.com", "articleapi", "v2.1"],
+      mode: "include",
+      status: [200],
+    },
+    {
+      target: ["apis.naver.com", "comments", "v2/cafes"],
       mode: "include",
       status: [200],
     },
   ];
 
-  // 필터링 조건이 맞는지 확인하는 함수
-  function apply_filter_test(
-    url: string | URL,
-    xml_status: number,
-    filter: IFilters
-  ) {
-    if (!(filter && filter.length > 0)) return false; // 필터가 없으면 변조 필터링이 적용되지 않아야 함
-    for (const item of filter) {
-      const { target, mode, status: filterStatus } = item;
-
-      // include 모드인 경우 url이 target을 포함하는 경우에만 필터링합니다.
-      if (mode === "include") {
-        // target이 string인지 string[] 인지 체크한다.
-        if (typeof target === "string") {
-          if ((url as string).includes(target)) {
-            // 변조 필터링이 적용되어야 함
-            if (filterStatus.includes(xml_status)) {
-              return true;
-            }
-          }
-        } else if (Array.isArray(target)) {
-          // 배열인 경우 모든 target이 포함되어야만 필터링합니다.
-          let is_all_include = true;
-          for (const target_item of target) {
-            if (!(url as string).includes(target_item)) {
-              is_all_include = false;
-              break;
-            }
-          }
-          if (is_all_include) {
-            // 변조 필터링이 적용되어야 함
-            if (filterStatus.includes(xml_status)) {
-              return true;
-            }
-          }
-        }
-      } else if (mode === "same" && url === target) {
-        // same 모드인 경우 url이 target과 같은 경우에만 필터링합니다.
-        if (filterStatus.includes(xml_status)) {
-          return true; // 변조 필터링이 적용되어야 함
-        }
-      }
-    }
-    return false; // 변조 필터링이 적용되지 않아야 함
-  }
+  // 차단된 유저의 키를 저장하는 배열
+  let blocked_user_key: string[] = [];
 
   var _open = XMLHttpRequest.prototype.open;
   window.XMLHttpRequest.prototype.open = function (method, url) {
@@ -67,7 +31,7 @@ namespace Proxys {
       // 요청이 완료된 경우에만 변조하도록 함 (readyState: 4)
       if (
         _this.readyState === 4 &&
-        apply_filter_test(url, _this.status, filter)
+        apply_filter_test(url.toString(), _this.status, filter)
       ) {
         try {
           console.log("Caught! :)", method, url /*, _this.responseText*/);
@@ -75,15 +39,24 @@ namespace Proxys {
         } catch (e) {}
 
         try {
+          // 먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.
+          if (url.toString().includes("v2.1")) {
+            console.log("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
+            const res = JSON.parse(_this.responseText);
+            blocked_user_key = res.result.user.blockMemberKeyList;
+            console.log("blocked_user_key", blocked_user_key);
+          }
+
           //////////////////////////////////////
           // 이곳에 응답값 변조 로직을 작성합니다.
           //////////////////////////////////////
           console.log("응답값 변조 시작");
           console.log(_this);
+          console.log(_this.responseText);
 
           // 여기서 responseText (응답 데이터) 와 status (응답 코드) 를 변조합니다.
           // Object.defineProperty(_this, "responseText", {
-          //   value: "password-correct",
+          //   value: _this.responseText.replaceAll("니다", "무니다."),
           // });
 
           // Object.defineProperty(_this, "status", {

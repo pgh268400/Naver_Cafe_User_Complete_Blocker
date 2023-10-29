@@ -13,6 +13,13 @@
   "background": {
     "service_worker": "background.js"
   },
+  // chrome.scripting 을 사용하려면 아래 2개 등록 필수
+  "permissions": ["storage", "scripting"],
+  "action": {},
+  "content_security_policy": {},
+
+  // 아래 펄미션 권한도 줘야함
+  "host_permissions": ["http://*/", "https://*/"],
 
   // 여기에 proxy.js를 리소스로 등록해야 inject.js에서 인젝션 할 수 있음.
   "web_accessible_resources": [
