@@ -186,9 +186,9 @@ namespace Proxys {
 
 // 차단된 유저의 글을 메인 화면에서 삭제하는 함수 (DOM 조작)
 async function delete_block_user_article_main() {
-  console.log("차단된 유저의 글을 메인 화면에서 삭제 합니다.");
+  LOG("차단된 유저의 글을 메인 화면에서 삭제 합니다.");
 
-  // console.log(document);
+  // LOG(document);
 
   // 메인 화면에서 글 박스를 모두 가져온다
 
@@ -223,8 +223,8 @@ async function delete_block_user_article_main() {
           // member_key의 원래 형태 ex => " 'mJWb3v1017TgkFAhDVI28w'"
 
           const member_key = split_onclick[1].trim().replace(/^'+|'+$/g, ""); //양쪽 공백 제거, 양쪽 따옴표 제거
-          // console.log("member_key", member_key);
-          // console.log(await get_blocked_user_key());
+          // LOG("member_key", member_key);
+          // LOG(await get_blocked_user_key());
 
           const blocked_user_key = await get_blocked_user_key();
 

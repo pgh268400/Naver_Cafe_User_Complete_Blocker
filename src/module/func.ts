@@ -5,7 +5,7 @@
 */
 
 // 해당 값을 false로 변경하면 로그가 출력되지 않습니다.
-const IS_DEBUG = true;
+const IS_DEBUG = false;
 
 const LOG = IS_DEBUG ? console.log.bind(console) : function () {};
 export { LOG };
