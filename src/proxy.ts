@@ -1,10 +1,11 @@
 import { apply_filter_test, include_string_in_array } from "./module/filter";
+import { LOG } from "./module/func";
 import { IComments, IFilters } from "./types/type";
 
 // 해당 코드는 inject.ts 에 의해 실행되는 코드이다.
 // response를 변조하기 위해 사용되는 가장 핵심적인 코드이다.
 namespace Proxys {
-  console.log("script run start");
+  LOG("script run start");
 
   /*
     특정 url 주소와 status 코드에 대해서만 응답값을 변조하도록 설정
@@ -25,12 +26,12 @@ namespace Proxys {
         xml: XMLHttpRequest,
         status: number
       ) => {
-        console.log("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
+        LOG("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
         const res_obj = JSON.parse(res);
-        console.log(res_obj);
+        LOG(res_obj);
 
         blocked_user_key = res_obj.result.user.blockMemberKeyList;
-        console.log("blocked_user_key", blocked_user_key);
+        LOG("blocked_user_key", blocked_user_key);
         return [status, res]; //Status, 응답값은 따로 변조하지 않고 그대로 반환한다.
       },
     },
@@ -45,9 +46,9 @@ namespace Proxys {
         xml: XMLHttpRequest,
         status: number
       ) => {
-        console.log("응답값 변조 시작");
-        console.log(xml);
-        console.log(res);
+        LOG("응답값 변조 시작");
+        LOG(xml);
+        LOG(res);
 
         // 응답 데이터를 json으로 변환합니다.
         const res_obj = JSON.parse(res);
@@ -98,7 +99,7 @@ namespace Proxys {
           }
         }
 
-        console.log("작업 완료된 comments", updated_comments);
+        LOG("작업 완료된 comments", updated_comments);
 
         // 삭제한 댓글 갯수 DOM에 반영
         const comment_dom = document.querySelector<HTMLElement>(
@@ -138,8 +139,8 @@ namespace Proxys {
       );
       if (_this.readyState === 4 && is_apply) {
         try {
-          console.log("Caught! :)", method, url /*, _this.responseText*/);
-          console.log("ready_status", _this.readyState, "status", _this.status);
+          LOG("Caught! :)", method, url /*, _this.responseText*/);
+          LOG("ready_status", _this.readyState, "status", _this.status);
         } catch (e) {}
 
         // 필터 조건에 맞는 콜백 함수를 호출하면서 상대쪽에 응답값을 넘겨준다.
@@ -152,8 +153,8 @@ namespace Proxys {
           _this.status
         );
 
-        console.log("modify_res", modify_res);
-        console.log("modify_status", modify_status);
+        LOG("modify_res", modify_res);
+        LOG("modify_status", modify_status);
 
         // 여기서 responseText (응답 데이터) 와 status (응답 코드) 를 변조합니다.
         Object.defineProperty(_this, "responseText", {
@@ -183,19 +184,20 @@ namespace Proxys {
   };
 }
 
-// 차단된 유저의 글을 메인 페이지에서 삭제하는 함수
+// 차단된 유저의 글을 메인 페이지에서 삭제하는 함수 (DOM 조작)
+
 function delete_block_user_article() {
   // 현재 주소 가져오기
   const current_url = window.location.href;
-  console.log("current_url", current_url);
+  LOG("current_url", current_url);
 
   // 특정 주소를 확인하고 처리
   if (current_url.includes("ArticleList")) {
     // 글 목록 페이지에서 실행됐으면 여기서 차단한 유저의 글이 있는지 확인하고 필터링한다.
-    console.log("본문에 진입하였습니다.");
+    LOG("본문에 진입하였습니다.");
 
     // 현재 쿠키값 출력
-    // console.log("현재 쿠키값", document.cookie);
+    // LOG("현재 쿠키값", document.cookie);
 
     // const cookie = document.cookie; //현재 쿠키값
     const club_id = (window as any).g_sClubId; //현재 카페 id
@@ -213,11 +215,11 @@ function delete_block_user_article() {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        LOG(data);
         // 차단된 유저의 키를 저장한다.
         const blocked_user_key = data.result;
 
-        console.log(
+        LOG(
           "차단된 유저의 키를 가져왔습니다, 이 키를 기준으로 본문 글을 삭제합니다",
           blocked_user_key
         );
@@ -230,7 +232,7 @@ function delete_block_user_article() {
 
         // for of문으로 순회한다
         for (const tr_user_data of tr_user_articles) {
-          // console.log("tr_user_data", tr_user_data);
+          // LOG("tr_user_data", tr_user_data);
           const user_nick = tr_user_data.querySelector(".p-nick a");
           if (user_nick === null) continue;
 
@@ -241,12 +243,12 @@ function delete_block_user_article() {
           const split_onclick = onclick_text.split(",");
           // member_key의 원래 형태 ex => " 'mJWb3v1017TgkFAhDVI28w'"
           const member_key = split_onclick[1].trim().replace(/^'+|'+$/g, ""); //양쪽 공백 제거, 양쪽 따옴표 제거
-          // console.log("split_onclick", split_onclick);
-          // console.log("member_key", member_key);
+          // LOG("split_onclick", split_onclick);
+          // LOG("member_key", member_key);
 
           if (include_string_in_array(blocked_user_key, member_key)) {
             // 차단된 유저의 글이면 삭제한다.
-            console.log(
+            LOG(
               "Detect blocked user's article, remove it",
               user_nick,
               member_key

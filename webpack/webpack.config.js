@@ -19,6 +19,7 @@ module.exports = {
       const filter = [
         "deprecated\\deprecated",
         "module\\filter",
+        "module\\func",
         "types\\type",
       ];
 
