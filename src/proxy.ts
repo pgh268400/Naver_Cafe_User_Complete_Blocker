@@ -6,13 +6,36 @@ import { IComments, IFilters } from "./types/type";
 namespace Proxys {
   console.log("script run start");
 
-  // 특정 url 주소와 status 코드에 대해서만 응답값을 변조하도록 설정
-  // handler 함수에 변조할 로직을 작성해서 넘기면 상대방 쪽에서 함수를 호출해준다 (콜백 함수)
-  // 참고로 핸들러 함수는 반드시 변조할 [Status, 응답값]을 반환해야 한다.
+  /*
+    특정 url 주소와 status 코드에 대해서만 응답값을 변조하도록 설정
+    handler 함수에 변조할 로직을 작성해서 넘기면 상대방 쪽에서 함수를 호출해준다 (콜백 함수)
+    참고로 핸들러 함수는 반드시 변조할 [Status, 응답값]을 반환해야 한다.
+  */
+
   const filter: IFilters = [
     // 기본적으로 v2.1 api가 먼저 요청되고, 그 다음에 v2 api 가 요청됨
     {
       target: ["apis.naver.com", "articleapi", "v2.1"],
+      mode: "include",
+      status: [200],
+      handler: (
+        res: string,
+        method: string,
+        url: string,
+        xml: XMLHttpRequest,
+        status: number
+      ) => {
+        console.log("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
+        const res_obj = JSON.parse(res);
+        console.log(res_obj);
+
+        blocked_user_key = res_obj.result.user.blockMemberKeyList;
+        console.log("blocked_user_key", blocked_user_key);
+        return [status, res]; //Status, 응답값은 따로 변조하지 않고 그대로 반환한다.
+      },
+    },
+    {
+      target: ["apis.naver.com", "comments", "v2/cafes"],
       mode: "include",
       status: [200],
       handler: (
@@ -89,27 +112,9 @@ namespace Proxys {
         res_obj.result.comments.items = updated_comments;
 
         // json 데이터를 다시 문자열로 변환합니다.
-        const res_string = JSON.stringify(res);
+        const res_string = JSON.stringify(res_obj);
 
         return [status, res_string]; //Status 는 그대로, 응답값은 변조된 값을 반환한다.
-      },
-    },
-    {
-      target: ["apis.naver.com", "comments", "v2/cafes"],
-      mode: "include",
-      status: [200],
-      handler: (
-        res: string,
-        method: string,
-        url: string,
-        xml: XMLHttpRequest,
-        status: number
-      ) => {
-        console.log("먼저 요청된 v2.1에서 차단된 유저의 키를 가져옵니다.");
-        const res_obj = JSON.parse(res);
-        blocked_user_key = res_obj.result.user.blockMemberKeyList;
-        console.log("blocked_user_key", blocked_user_key);
-        return [status, res]; //Status, 응답값은 따로 변조하지 않고 그대로 반환한다.
       },
     },
   ];
@@ -146,6 +151,9 @@ namespace Proxys {
           _this,
           _this.status
         );
+
+        console.log("modify_res", modify_res);
+        console.log("modify_status", modify_status);
 
         // 여기서 responseText (응답 데이터) 와 status (응답 코드) 를 변조합니다.
         Object.defineProperty(_this, "responseText", {
