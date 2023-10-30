@@ -9,6 +9,11 @@
 namespace Inject {
   var s: any = document.createElement("script");
   s.src = chrome.runtime.getURL("proxy.js");
+
+  // 밑에 2줄 추가해줘야 Console.log 한글깨짐 발생 안함
+  s.setAttribute("type", "text/javascript");
+  s.charset = "UTF-8";
+
   s.onload = function () {
     this.remove();
   };
