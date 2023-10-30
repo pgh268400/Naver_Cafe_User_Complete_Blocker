@@ -3,6 +3,13 @@ interface IFilter {
   target: string | string[];
   mode: string;
   status: number[];
+  handler: (
+    res: string,
+    method: string,
+    url: string,
+    xml: XMLHttpRequest,
+    status: number
+  ) => [number, string];
 }
 
 type IFilters = IFilter[];
