@@ -24,7 +24,7 @@
   // 여기에 proxy.js를 리소스로 등록해야 inject.js에서 인젝션 할 수 있음.
   "web_accessible_resources": [
     {
-      "resources": ["proxy.js"],
+      "resources": ["proxy.js", "dom.js"],
       "matches": ["<all_urls>"]
     }
   ]

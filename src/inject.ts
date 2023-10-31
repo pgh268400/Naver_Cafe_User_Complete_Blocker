@@ -7,15 +7,21 @@
 */
 
 namespace Inject {
-  var s: any = document.createElement("script");
-  s.src = chrome.runtime.getURL("proxy.js");
+  function inject_script(file_name: string) {
+    var s: any = document.createElement("script");
+    s.src = chrome.runtime.getURL(file_name);
 
-  // 밑에 2줄 추가해줘야 Console.log 한글깨짐 발생 안함
-  s.setAttribute("type", "text/javascript");
-  s.charset = "UTF-8";
+    // 밑에 2줄 추가해줘야 Console.log 한글깨짐 발생 안함
+    s.setAttribute("type", "text/javascript");
+    s.charset = "UTF-8";
 
-  s.onload = function () {
-    this.remove();
-  };
-  (document.head || document.documentElement).appendChild(s);
+    s.onload = function () {
+      this.remove();
+    };
+
+    (document.head || document.documentElement).appendChild(s);
+  }
+
+  inject_script("proxy.js");
+  inject_script("dom.js");
 }
